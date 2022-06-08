@@ -56,34 +56,35 @@
                         &kp LALT  &mo 1 &kp SPACE &mo 2  &kp LGUI
                         >;
                 };
-
+                
                 lower_layer {
 // ----------------------------------------------------------------------------------
 // |    |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |    DEL    |
-// |    |  _  |  +  |  {  |  }  | "|" |   | LFT | DWN |  UP | RGT |  `  |     ~     |
-// |    | ESC | GUI | ALT | CAPS|  "  |   | HOME| END | PGUP| PGDN| PRSC| SHFT(RET) |
+// |    |  _  |  +  |  {  |  }  | "|" |   | F1  | F2  | F3  | F4  | F5  | F6  |
+// |    | ESC | GUI | ALT | CAPS|  "  |   | F7  | F8  | F9  | F10 | F11 | F12 |
 //                       |     |     | RET | ADJ |     |
                         bindings = <
    &trans &kp EXCL  &kp AT      &kp HASH &kp DLLR &kp PRCNT      &kp CARET &kp AMPS &kp KP_MULTIPLY    &kp LPAR  &kp RPAR  &kp DEL
-   &trans &kp UNDER &kp KP_PLUS &kp LBRC &kp RBRC &kp PIPE       &kp LEFT  &kp DOWN &kp UP    &kp RIGHT &kp GRAVE &kp TILDE
-   &trans &kp ESC   &kp LGUI    &kp LALT &kp CLCK &kp DQT        &kp HOME  &kp PG_DN  &kp PG_UP &kp END  &kp PSCRN &mt RSHFT RET
+   &trans &kp UNDER &kp KP_PLUS &kp LBRC &kp RBRC &kp PIPE       &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6
+   &trans &kp ESC   &kp LGUI    &kp LALT &kp CLCK &kp DQT        &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
                                  &trans      &trans       &kp RET        &mo 3       &trans
                         >;
                 };
-
+                
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |    |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | DEL |
-// |    |  -  |  =  |  [  |  ]  |  \  |   | F1  | F2  | F3  | F4  | F5  | F6  |
-// |    | ESC | GUI | ALT | CAPS|  "  |   | F7  | F8  | F9  | F10 | F11 | F12 |
+// |    |  -  |  =  |  [  |  ]  |  \  |   | LFT | DWN |  UP | RGT |  `  |     ~     |
+// |    | ESC | GUI | ALT | CAPS|  "  |   | HOME| END | PGUP| PGDN| PRSC| SHFT(RET) |
 //                       |     | ADJ | BKSP |    |     |
                         bindings = <
    &trans &kp N1    &kp N2    &kp N3    &kp N4    &kp N5        &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp DEL
-   &trans &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH      &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6
-   &trans &kp ESC   &kp RGUI  &kp RALT  &kp CLCK  &kp DQT       &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
+   &trans &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH      &kp LEFT  &kp DOWN &kp UP    &kp RIGHT &kp GRAVE &kp TILDE
+   &trans &kp ESC   &kp RGUI  &kp RALT  &kp CLCK  &kp DQT       &kp HOME  &kp PG_DN  &kp PG_UP &kp END  &kp PSCRN &mt RSHFT RET
                                 &trans      &mo 3       &kp BSPC        &trans      &trans
                         >;
-                };
+                };                
+                
 
                 adjust_layer {
 // -----------------------------------------------------------------------------------------
